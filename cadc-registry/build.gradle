@@ -21,8 +21,10 @@ dependencies {
     compile 'org.jdom:jdom2:2.+'
     compile 'xerces:xercesImpl:2.+'
 
-    compile 'org.opencadc:cadc-util:1.+'
-    compile 'org.opencadc:cadc-log:1.+'
+    //compile 'org.opencadc:cadc-util:1.+'
+    //compile 'org.opencadc:cadc-log:1.+'
+    compile files('/home/bertocco/opt/opencadc/projects/core/cadc-util/build/libs/cadc-util.jar')
+    compile files('/home/bertocco/opt/opencadc/projects/core/cadc-log/build/libs/cadc-log.jar')
 
     testCompile group: 'junit', name: 'junit', version: '4.+'
     testCompile group: 'org.easymock', name: 'easymock', version: '3.+'
